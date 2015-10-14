@@ -1,6 +1,9 @@
 # formsy-mui-demo
 A simple Meteor app to demo formsy-material-ui
 
+## Live demo
+
+http://formsy-mui-demo.meteor.com
 
 ## Usage
 
