@@ -1,6 +1,6 @@
 # formsy-mui-demo
 A simple Meteor app to demo [formsy-material-ui](https://github.com/mbrookes/formsy-material-ui)
-- a [Formsy](https://github.com/christianalfoni/formsy-react) wrapper
+- a [formsy-react](https://github.com/christianalfoni/formsy-react) wrapper
 for [Material-UI](http://material-ui.com) form components.
 
 ## Live demo
