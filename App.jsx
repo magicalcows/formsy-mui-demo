@@ -2,7 +2,6 @@
 
 injectTapEventPlugin();
 
-let { Paper, Checkbox, RaisedButton } = MUI;
 let { FormsyCheckbox, FormsyDate, FormsyRadio, FormsyRadioGroup, FormsySelect, FormsyText, FormsyTime, FormsyToggle } = FMUI;
 
 Form = React.createClass({
@@ -13,7 +12,7 @@ Form = React.createClass({
 
   getChildContext(){
     return {
-      muiTheme: MUI.Styles.ThemeManager.getMuiTheme(MUI.Styles.LightRawTheme)
+      muiTheme: Styles.ThemeManager.getMuiTheme(Styles.LightRawTheme)
     }
   },
 
