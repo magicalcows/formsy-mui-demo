@@ -1,5 +1,7 @@
 # formsy-mui-demo
-A simple Meteor app to demo formsy-material-ui
+A simple Meteor app to demo [formsy-material-ui](https://github.com/mbrookes/formsy-material-ui)
+- a [Formsy](https://github.com/christianalfoni/formsy-react) wrapper
+for [Material-UI](http://material-ui.com) form components.
 
 ## Live demo
 
@@ -22,5 +24,4 @@ Clone this repo: `git clone https://github.com/mbrookes/formsy-mui-demo.git`
 
 ## Acknowledgements
 
-Based on an example from: https://github.com/rblakeley/pro-camper/blob/master/app/components/Form.js
-
+Based on an example from: [Ryan Blakeley](https://github.com/rblakeley)
