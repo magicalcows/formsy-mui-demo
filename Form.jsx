@@ -59,23 +59,12 @@ Form = React.createClass({
     });
   },
 
-  submitForm: function (model) {
-    console.log("Model: ", model);
-    alert(
-      `Name:  ${model.name}\n
-      Chucked: ${model.chuck}\n
-      URL: ${model.url}\n
-      Frequency: ${model.frequency}\n
-      Date: ${model.date}\n
-      Time: ${model.time}\n
-      Agree: ${model.agree}\n
-      Toggle: ${model.toggle}\n
-      Speed: ${model.shipSpeed}\n
-    `);
+  submitForm: function (data) {
+    alert(JSON.stringify(data, null, 4));
   },
 
-  notifyFormError: function (model) {
-    console.error('Form error:', model);
+  notifyFormError: function (data) {
+    console.error('Form error:', data);
   },
 
   render: function () {
