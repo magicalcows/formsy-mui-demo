@@ -2,5 +2,5 @@
   "externalify": "0.1.0",
   "material-ui": "0.12.3",
   "formsy-react": "0.14.1",
-  "formsy-material-ui": "0.1.4"
+  "formsy-material-ui": "0.2.0"
 }
