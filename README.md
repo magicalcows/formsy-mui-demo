@@ -20,6 +20,7 @@ Clone this repo: `git clone https://github.com/mbrookes/formsy-mui-demo.git`
 
 * 0.1.0 Initial release
 * 0.1.2 Use formsy-material-ui 0.1.3, add usage, release history and acknowledgements to README
+* 0.1.3 Use formsy-material-ui 0.1.4
 
 
 ## Acknowledgements
