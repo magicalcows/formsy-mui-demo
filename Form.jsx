@@ -89,8 +89,7 @@ Form = React.createClass({
             onInvalid={this.disableButton}
             onValidSubmit={this.submitForm}
             onInvalidSubmit={this.notifyFormError}
-            style={styles.form}
-            mapping={this.mapInputs} >
+            style={styles.form} >
 
               <FormsyText
               name='name'
