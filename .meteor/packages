@@ -22,5 +22,5 @@ insecure                # Allow all DB writes from clients (for prototyping)
 
 react                   # Enables react support
 meteorhacks:npm         # Use NPM modules
+npm-container           # Container for NPM modules
 cosmos:browserify       # Allow NPM modules to be used in client code
-npm-container           # Container for client NPM modules

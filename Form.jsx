@@ -73,6 +73,7 @@ Form = React.createClass({
 
     return (
         <Paper style={styles.paper}>
+          <SelectField menuItems={this.selectFieldItems}/>
           <Formsy.Form
             onValid={this.enableButton}
             onInvalid={this.disableButton}
