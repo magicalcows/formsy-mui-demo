@@ -37,12 +37,15 @@ Form = React.createClass({
   ],
 
   styles: {
-    paper: {
+    paperStyle: {
       width: 300,
       margin: 20,
       padding: 20
     },
-    submit: {
+    switchStyle: {
+      marginBottom:16
+    },
+    submitStyle: {
       marginTop: 32
     }
   },
@@ -68,93 +71,91 @@ Form = React.createClass({
   },
 
   render: function () {
-    let styles = this.styles;
+    let {paperStyle, switchStyle, submitStyle } = this.styles;
     let { wordsError, numericError, urlError } = this.errorMessages;
 
     return (
-        <Paper style={styles.paper}>
-          <SelectField menuItems={this.selectFieldItems}/>
-          <Formsy.Form
-            onValid={this.enableButton}
-            onInvalid={this.disableButton}
-            onValidSubmit={this.submitForm}
-            onInvalidSubmit={this.notifyFormError}
-            style={styles.form} >
-
-              <FormsyText
-              name='name'
-              validations='isWords'
-              validationError={wordsError}
-              required
-              hintText="What is your name?"
-              floatingLabelText="Name" />
+      <Paper style={paperStyle}>
+        <Formsy.Form
+          onValid={this.enableButton}
+          onInvalid={this.disableButton}
+          onValidSubmit={this.submitForm}
+          onInvalidSubmit={this.notifyFormError} >
 
             <FormsyText
-              name='chuck'
-              validations='isNumeric'
-              validationError={numericError}
-              required
-              hintText="wood could a woodchuck chuck?"
-              floatingLabelText="How much" />
+            name='name'
+            validations='isWords'
+            validationError={wordsError}
+            required
+            hintText="What is your name?"
+            floatingLabelText="Name" />
 
-            <FormsyText
-              name='url'
-              validations='isUrl'
-              validationError={urlError}
-              required
-              hintText="Where can we find out more?"
-              floatingLabelText="URL" />
+          <FormsyText
+            name='chuck'
+            validations='isNumeric'
+            validationError={numericError}
+            required
+            hintText="wood could a woodchuck chuck?"
+            floatingLabelText="How much" />
 
-            <FormsySelect
-              name='frequency'
-              required
-              floatingLabelText="How often do you?"
-              menuItems={this.selectFieldItems}/>
+          <FormsyText
+            name='url'
+            validations='isUrl'
+            validationError={urlError}
+            required
+            hintText="Where can we find out more?"
+            floatingLabelText="URL" />
 
-            <FormsyDate
-              name='date'
-              required
-              floatingLabelText="Date" />
+          <FormsySelect
+            name='frequency'
+            required
+            floatingLabelText="How often do you?"
+            menuItems={this.selectFieldItems}/>
 
-            <FormsyTime
-              name='time'
-              required
-              floatingLabelText="Time" />
+          <FormsyDate
+            name='date'
+            required
+            floatingLabelText="Date" />
 
-            <FormsyCheckbox
-              name='agree'
-              label="Do you agree to disagree?"
-              defaultChecked={true}
-              style={{marginBottom:16}} />
+          <FormsyTime
+            name='time'
+            required
+            floatingLabelText="Time" />
 
-            <FormsyToggle
-              name='toggle'
-              label="Toggle"
-              style={{marginBottom:16}} />
+          <FormsyCheckbox
+            name='agree'
+            label="Do you agree to disagree?"
+            defaultChecked={true}
+            style={switchStyle} />
 
-            <FormsyRadioGroup name="shipSpeed" defaultSelected="not_light">
-              <FormsyRadio
-                value="light"
-                label="prepare for light speed"
-                style={{marginBottom:16}} />
-              <FormsyRadio
-                value="not_light"
-                label="light speed too slow"
-                style={{marginBottom:16}}/>
-              <FormsyRadio
-                value="ludicrous"
-                label="go to ludicrous speed"
-                style={{marginBottom:16}}
-                disabled={true}/>
-            </FormsyRadioGroup>
+          <FormsyToggle
+            name='toggle'
+            label="Toggle"
+            style={switchStyle} />
 
-            <RaisedButton
-              style={styles.submit}
-              type="submit"
-              label="Submit"
-              disabled={!this.state.canSubmit} />
-          </Formsy.Form>
-        </Paper>
+          <FormsyRadioGroup name="shipSpeed" defaultSelected="not_light">
+            <FormsyRadio
+              value="light"
+              label="prepare for light speed"
+              style={switchStyle} />
+            <FormsyRadio
+              value="not_light"
+              label="light speed too slow"
+              style={switchStyle}/>
+            <FormsyRadio
+              value="ludicrous"
+              label="go to ludicrous speed"
+              style={switchStyle}
+              disabled={true}/>
+          </FormsyRadioGroup>
+
+          <RaisedButton
+            style={submitStyle}
+            type="submit"
+            label="Submit"
+            disabled={!this.state.canSubmit} />
+        </Formsy.Form>
+      </Paper>
     );
   }
 });

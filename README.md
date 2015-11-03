@@ -22,3 +22,8 @@ Clone this repo: `git clone https://github.com/mbrookes/formsy-mui-demo.git`
 * 0.1.2 Use formsy-material-ui 0.1.3, add usage, release history and acknowledgements to README
 * 0.1.3 Use formsy-material-ui 0.1.4
 * 0.1.4 Use formsy-material-ui 0.2.2
+* 0.1.5 Use formsy-material-ui 0.2.4, formsy-react 0.17.0, materail-ui 0.13.1, meteor 1.2.1
+
+## Issues
+
+`Warning: require('react/addons') is deprecated.`
