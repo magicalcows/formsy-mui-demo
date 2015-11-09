@@ -1,4 +1,4 @@
-// Based on sample from: https://github.com/rblakeley/pro-camper/blob/master/app/components/Form.js
+// Based on example from: https://github.com/rblakeley/pro-camper/blob/master/app/components/Form.js
 
 injectTapEventPlugin();
 
@@ -76,13 +76,14 @@ Form = React.createClass({
 
     return (
       <Paper style={paperStyle}>
+
         <Formsy.Form
           onValid={this.enableButton}
           onInvalid={this.disableButton}
           onValidSubmit={this.submitForm}
           onInvalidSubmit={this.notifyFormError} >
 
-            <FormsyText
+          <FormsyText
             name='name'
             validations='isWords'
             validationError={wordsError}
@@ -103,7 +104,8 @@ Form = React.createClass({
             validations='isUrl'
             validationError={urlError}
             required
-            hintText="Where can we find out more?"
+            defaultValue="http://"
+            hintText="http://www.example.com"
             floatingLabelText="URL" />
 
           <FormsySelect
