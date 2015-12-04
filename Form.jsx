@@ -2,8 +2,6 @@
 
 injectTapEventPlugin();
 
-let { FormsyCheckbox, FormsyDate, FormsyRadio, FormsyRadioGroup, FormsySelect, FormsyText, FormsyTime, FormsyToggle } = FMUI;
-
 Form = React.createClass({
 
   childContextTypes: {
@@ -84,24 +82,23 @@ Form = React.createClass({
           onInvalidSubmit={this.notifyFormError} >
 
           <FormsyText
-            name='name'
-            validations='isWords'
+            name="name"
+            validations="isWords"
             validationError={wordsError}
             required
             hintText="What is your name?"
             floatingLabelText="Name" />
 
           <FormsyText
-            name='chuck'
-            validations='isNumeric'
+            name="chuck"
+            validations="isNumeric"
             validationError={numericError}
-            required
-            hintText="wood could a woodchuck chuck?"
-            floatingLabelText="How much" />
+            hintText="Tell us your age for more accurate results."
+            floatingLabelText="Age (optional)" />
 
           <FormsyText
-            name='url'
-            validations='isUrl'
+            name="url"
+            validations="isUrl"
             validationError={urlError}
             required
             defaultValue="http://"
@@ -109,29 +106,29 @@ Form = React.createClass({
             floatingLabelText="URL" />
 
           <FormsySelect
-            name='frequency'
+            name="frequency"
             required
             floatingLabelText="How often do you?"
             menuItems={this.selectFieldItems}/>
 
           <FormsyDate
-            name='date'
+            name="date"
             required
             floatingLabelText="Date" />
 
           <FormsyTime
-            name='time'
+            name="time"
             required
             floatingLabelText="Time" />
 
           <FormsyCheckbox
-            name='agree'
+            name="agree"
             label="Do you agree to disagree?"
             defaultChecked={true}
             style={switchStyle} />
 
           <FormsyToggle
-            name='toggle'
+            name="toggle"
             label="Toggle"
             style={switchStyle} />
 

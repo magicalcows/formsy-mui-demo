@@ -625,7 +625,7 @@
       }
     },
     "formsy-material-ui": {
-      "version": "0.2.5"
+      "version": "0.3.3"
     },
     "formsy-react": {
       "version": "0.17.0",
@@ -639,7 +639,7 @@
       "version": "0.13.1"
     },
     "react": {
-      "version": "0.14.2",
+      "version": "0.14.3",
       "dependencies": {
         "envify": {
           "version": "3.4.0",
@@ -701,19 +701,19 @@
       }
     },
     "react-addons-create-fragment": {
-      "version": "0.14.2"
+      "version": "0.14.3"
     },
     "react-addons-pure-render-mixin": {
-      "version": "0.14.2"
+      "version": "0.14.3"
     },
     "react-addons-transition-group": {
-      "version": "0.14.2"
+      "version": "0.14.3"
     },
     "react-addons-update": {
-      "version": "0.14.2"
+      "version": "0.14.3"
     },
     "react-dom": {
-      "version": "0.14.2"
+      "version": "0.14.3"
     },
     "react-tap-event-plugin": {
       "version": "0.2.1",
