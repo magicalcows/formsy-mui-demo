@@ -14,7 +14,7 @@ Form = React.createClass({
     }
   },
 
-  getInitialState: function () {
+  getInitialState() {
     return {
       canSumbit: false
     };
@@ -48,27 +48,27 @@ Form = React.createClass({
     }
   },
 
-  enableButton: function () {
+  enableButton() {
     this.setState({
       canSubmit: true
     });
   },
 
-  disableButton: function () {
+  disableButton() {
     this.setState({
       canSubmit: false
     });
   },
 
-  submitForm: function (data) {
+  submitForm(data) {
     alert(JSON.stringify(data, null, 4));
   },
 
-  notifyFormError: function (data) {
+  notifyFormError(data) {
     console.error('Form error:', data);
   },
 
-  render: function () {
+  render() {
     let {paperStyle, switchStyle, submitStyle } = this.styles;
     let { wordsError, numericError, urlError } = this.errorMessages;
 
