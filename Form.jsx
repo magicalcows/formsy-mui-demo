@@ -90,10 +90,10 @@ Form = React.createClass({
             floatingLabelText="Name" />
 
           <FormsyText
-            name="chuck"
+            name="age"
             validations="isNumeric"
             validationError={numericError}
-            hintText="Tell us your age for more accurate results."
+            hintText="Are you a wrinkly?"
             floatingLabelText="Age (optional)" />
 
           <FormsyText
